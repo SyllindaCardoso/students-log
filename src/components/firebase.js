@@ -9,9 +9,13 @@ var firebaseConfig = {
     appId: "1:94420250378:web:762aee6a074103e4d354f3"
 };
   // Initialize Firebase
+const firebase = require('firebase');
 firebase.initializeApp(firebaseConfig);
 
 // get a reference to the database service
 var database = firebase.database();
+
+// signup route
+app.post('/login-page');
 
 export { firebase, database }
